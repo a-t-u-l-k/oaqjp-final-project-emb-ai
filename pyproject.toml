@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emotion-detector"
+version = "0.1.0"
+description = "AI-based emotion detector web application using Watson NLP."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "Flask>=3.1,<4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pylint>=3.3,<4",
+]
+
+[tool.setuptools.packages.find]
+include = ["EmotionDetection*"]
+
+[tool.pylint.main]
+py-version = "3.13"
+
+[tool.pylint."messages control"]
+disable = [
+  "invalid-name",
+  "missing-module-docstring",
+  "missing-function-docstring",
+  "missing-class-docstring",
+  "too-few-public-methods",
+]

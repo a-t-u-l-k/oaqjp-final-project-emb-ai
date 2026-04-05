@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="card">
+        <p class="eyebrow">Watson NLP</p>
+        <h1>Emotion Detector</h1>
+        <p class="intro">
+          Enter a sentence and the application will classify the dominant emotion
+          along with the individual emotion scores.
+        </p>
+
+        <label for="textToAnalyze">Text to analyze</label>
+        <textarea
+          id="textToAnalyze"
+          rows="6"
+          placeholder="Example: I am excited about presenting this project."
+        ></textarea>
+
+        <button id="analyzeButton" type="button">Run Emotion Analysis</button>
+
+        <section class="result-panel" aria-live="polite">
+          <h2>Result</h2>
+          <p id="system_response">Your analysis result will appear here.</p>
+        </section>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
