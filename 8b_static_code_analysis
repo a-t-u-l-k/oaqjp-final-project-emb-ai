@@ -1,0 +1,4 @@
+$ PYLINTHOME=.pylint.d .venv/bin/pylint EmotionDetection server.py tests
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)

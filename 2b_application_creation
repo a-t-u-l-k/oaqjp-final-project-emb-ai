@@ -1,0 +1,9 @@
+$ .venv/bin/python -c "import EmotionDetection, server; print('imports-ok')"
+imports-ok
+
+$ .venv/bin/python -m unittest discover -s tests
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

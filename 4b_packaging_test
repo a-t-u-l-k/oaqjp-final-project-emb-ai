@@ -1,0 +1,3 @@
+$ .venv/bin/python -c "import EmotionDetection; print('EmotionDetection package import: OK'); print('exports:', EmotionDetection.__all__)"
+EmotionDetection package import: OK
+exports: ['emotion_detector', 'emotion_predictor']
