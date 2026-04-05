@@ -1,10 +1,10 @@
-# Emotion Detector
+# Final Project - Emotion Detector
 
-Emotion Detector is a small Flask web application that submits user text to the
-Watson NLP emotion classification service, formats the emotion scores, and
-returns the dominant emotion. If the optional `watson_nlp` runtime and model
-are installed locally, the package will try the native library first and fall
-back to the hosted endpoint otherwise.
+This Final Project is an Emotion Detector web application that submits user
+text to the Watson NLP emotion classification service, formats the emotion
+scores, and returns the dominant emotion. If the optional `watson_nlp` runtime
+and model are installed locally, the package will try the native library first
+and fall back to the hosted endpoint otherwise.
 
 
 ## Project structure
